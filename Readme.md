@@ -16,6 +16,10 @@
     - Dificil
     - 2 Jugadores
 
+## Visualizacion 
+
+![Juego de 3 en raya](./pantallaInicio.png)
+
 [Visita todos mis proyectos en mi GitHub](https://github.com/plaazaa03)
 
 [Ademas de mi Linkedin](www.linkedin.com/in/raúl-plaza-gálvez-47b892253)
