@@ -14,7 +14,7 @@
     - Facil
     - Medio
     - Dificil
-    - O 2 Jugadores
+    - 2 Jugadores
 
 
 
