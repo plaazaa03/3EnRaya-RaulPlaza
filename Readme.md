@@ -9,8 +9,12 @@
  - Si alguno de los jugadores consigue tener 3 "X" o 3 "O" consecutivas en vertical, horizontal o diagonal, ganara.
 
  - Cuando hayas terminado el juego, pulsas el boton "Reiniciar" para reiniciar el juego.
- 
-## Referencias
+
+## Dificultades
+    - Facil
+    - Medio
+    - Dificil
+    
 
 
 
