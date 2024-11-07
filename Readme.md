@@ -34,7 +34,7 @@
 [Ademas de mi Linkedin](www.linkedin.com/in/raúl-plaza-gálvez-47b892253)
 
 ## Codigo Embebido De Ejemplo de Juego de 3 en Raya (Javascript)
-```
+```JavaScript
 let tablero = new Array(9).fill(' ');
 
 function dibujarTablero() {
