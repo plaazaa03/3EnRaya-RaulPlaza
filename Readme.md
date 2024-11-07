@@ -16,6 +16,13 @@
     - Dificil
     - 2 Jugadores
 
+## Lenguajes de Programacion
+
+| Lenguajes     | IDE           |
+| ------------- | ------------- |
+| PHP           | Visual Studio |
+| Javascript    | Visual Studio |
+
 ## Visualizacion 
 
 ![Juego de 3 en raya](./pantallaInicio.png)
@@ -23,6 +30,51 @@
 [Visita todos mis proyectos en mi GitHub](https://github.com/plaazaa03)
 
 [Ademas de mi Linkedin](www.linkedin.com/in/raúl-plaza-gálvez-47b892253)
+
+## Codigo Embebido
+
+```
+// Juego de tres en raya
+
+// Tablero
+let tablero = new Array(9).fill(' ');
+
+// Función para dibujar el tablero
+function dibujarTablero() {
+    console.log(`${tablero[0]} | ${tablero[1]} | ${tablero[2]}`);
+    console.log('---------');
+    console.log(`${tablero[3]} | ${tablero[4]} | ${tablero[5]}`);
+    console.log('---------');
+    console.log(`${tablero[6]} | ${tablero[7]} | ${tablero[8]}`);
+}
+
+// Función para verificar si hay un ganador
+function verificarGanador() {
+    const ganadores = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+    for (const ganador of ganadores) {
+        if (tablero[ganador[0]] === tablero[ganador[1]] && tablero[ganador[1]] === tablero[ganador[2]] && tablero[ganador[0]] !== ' ') {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Función para jugar
+function jugar() {
+    let jugador = 'X';
+    while (true) {
+        dibujarTablero();
+        const movimiento = prompt(`Jugador ${jugador}, ingresa tu movimiento (1-9): `);
+        if (tablero[movimiento - 1] !== ' ') {
+            console.log('Movimiento inválido, intenta de nuevo.');
+            continue;
+        }
+        tablero[movimiento - 1] = jugador;
+        if (verificarGanador()) {
+            dibujarTablero();
+            console.log(`Jugador ${jugador} gana!
+
+```
 
 
 
