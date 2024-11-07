@@ -22,6 +22,8 @@
 | ------------- | ------------- |
 | PHP           | Visual Studio |
 | Javascript    | Visual Studio |
+| HMTL          | Visual Studio |
+| CSS            | Visual Studio |
 
 ## Visualizacion 
 
@@ -31,15 +33,10 @@
 
 [Ademas de mi Linkedin](www.linkedin.com/in/raúl-plaza-gálvez-47b892253)
 
-## Codigo Embebido
-
+## Codigo Embebido De Ejemplo de Juego de 3 en Raya (Javascript)
 ```
-// Juego de tres en raya
-
-// Tablero
 let tablero = new Array(9).fill(' ');
 
-// Función para dibujar el tablero
 function dibujarTablero() {
     console.log(`${tablero[0]} | ${tablero[1]} | ${tablero[2]}`);
     console.log('---------');
@@ -48,7 +45,6 @@ function dibujarTablero() {
     console.log(`${tablero[6]} | ${tablero[7]} | ${tablero[8]}`);
 }
 
-// Función para verificar si hay un ganador
 function verificarGanador() {
     const ganadores = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
     for (const ganador of ganadores) {
@@ -59,7 +55,6 @@ function verificarGanador() {
     return false;
 }
 
-// Función para jugar
 function jugar() {
     let jugador = 'X';
     while (true) {
@@ -72,8 +67,19 @@ function jugar() {
         tablero[movimiento - 1] = jugador;
         if (verificarGanador()) {
             dibujarTablero();
-            console.log(`Jugador ${jugador} gana!
+            console.log(`Jugador ${jugador} ganaste!`);
+            break;
+        }
 
+        if (jugador === 'X') {
+            jugador = 'O';
+        } else {
+            jugador = 'X';
+        }
+    }
+}
+
+jugar();
 ```
 
 
